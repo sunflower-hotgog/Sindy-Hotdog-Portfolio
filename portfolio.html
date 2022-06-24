@@ -1,0 +1,372 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <title> Berbosidad - ICT - Final Project - Personal Portfolio Website - Portfolio</title>
+
+  <link rel="icon" type="image/x-icon" href="fufucun.png">
+  
+<style type="text/css">
+
+/*bg*/
+body {
+      background:black;
+}
+}
+/* Nav Bar */
+
+a:link, a:visited {
+  background-color: #caaf9c;
+  color: black;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+}
+
+a:hover, a:active {
+  background-color: #A9A9A9;
+}
+
+ body {
+     padding: 3em;
+}
+ul {
+  list-style-type: none;
+  margin-bottom: 20px;
+  padding: 0;
+  overflow: hidden;
+  background-color: #333;
+}
+
+li {
+  float: left;
+
+}
+
+li a {
+  display: block;
+  color: white;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+  padding-right: 90px;[/COLOR]
+}
+
+li a:hover:not(.active) {
+  background-color: #111;
+}
+
+.active {
+  background-color:  #fff;
+  color: black;
+}
+    text {
+        filter: url(#filter);
+        fill: white;
+        font-family: 'Share Tech Mono', sans-serif;
+        font-size: 70px;
+        -webkit-font-smoothing: antialiased;
+        -moz-osx-font-smoothing: grayscale;
+            }
+]]>
+@import "compass/css3";
+
+@import url(https://fonts.googleapis.com/css?family=Share+Tech+Mono);
+
+.info {
+  color: white;
+  font:1em/1 sans-serif;
+  text-align: center;
+}
+
+.info a{
+  color: white;
+}
+
+svg{
+  width: 1000px;
+  height: 200px;
+  display: block;
+  position: relative;
+  overflow: hidden; 
+  margin: 0 auto;
+  background: black;
+}
+* {
+  box-sizing: border-box;
+}
+
+/* The grid: Three equal columns that floats next to each other */
+.column {
+  float: left;
+  width: 33.33%;
+  padding: 20px;
+  text-align: center;
+  font-size: 25px;
+  cursor: pointer;
+  color: white;
+  margin-bottom:50px;
+}
+
+.containerTab {
+  padding: 20px;
+  color: white;
+  margin-bottom:50px;
+}
+
+/* Clear floats after the columns */
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
+
+}
+
+/* Closable button inside the container tab */
+.closebtn {
+  float: right;
+  color: white;
+  font-size: 35px;
+  cursor: pointer;
+}
+
+@import url('https://fonts.googleapis.com/css?family=Ubuntu:400,400i,700,700i');
+
+
+*, *:before, *:after {
+    margin: 0;
+    padding: 0;
+    word-break: break-all;
+  box-sizing: border-box;
+  scroll-behavior: smooth;
+}
+
+html {
+  font-size: 10px;
+}
+
+body {
+    font-family: 'Ubuntu', sans-serif;
+    color: #6e6e6e;
+    font-size: 1.6rem;
+}
+
+header, footer {
+  display: block;
+}
+
+a, a:link, a:visited {
+  text-decoration: none;
+}
+
+img {
+    border: 0;
+}
+
+ul {
+    list-style: none;
+}
+
+a:link {
+  color: black;
+  background-color: transparent;
+  text-decoration: none;
+}
+
+a:visited {
+  color: black;
+  background-color: transparent;
+  text-decoration: none;
+}
+a:hover {
+  color: red;
+  background-color: transparent;
+  text-decoration: underline;
+}
+a:active {
+  color: blue;
+  background-color: transparent;
+  text-decoration: underline;
+}
+
+</style>
+</head>
+
+<body>
+    <ul>
+  <li><a href="index.html">Home</a></li>
+  <li><a href="about.html">About</a></li>
+  <li><a class="active">Portfolio</a></li>
+</ul>
+
+<svg version="1.1" id="Ebene_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" 
+     width="600px" height="100px" viewBox="0 0 600 100">
+
+    <defs>
+
+        <filter id="filter">
+            <feFlood flood-color="black" result="black" />
+            <feFlood flood-color="red" result="flood1" />
+            <feFlood flood-color="limegreen" result="flood2" />
+            <feOffset in="SourceGraphic" dx="3" dy="0" result="off1a"/>
+            <feOffset in="SourceGraphic" dx="2" dy="0" result="off1b"/>
+            <feOffset in="SourceGraphic" dx="-3" dy="0" result="off2a"/>
+            <feOffset in="SourceGraphic" dx="-2" dy="0" result="off2b"/>
+            <feComposite in="flood1" in2="off1a" operator="in"  result="comp1" />
+            <feComposite in="flood2" in2="off2a" operator="in" result="comp2" />
+
+            <feMerge x="0" width="100%" result="merge1">
+                <feMergeNode in = "black" />
+                <feMergeNode in = "comp1" />
+                <feMergeNode in = "off1b" />
+
+                <animate 
+                    attributeName="y" 
+                    id = "y"
+                    dur ="4s"
+                    
+                    values = '104px; 104px; 30px; 105px; 30px; 2px; 2px; 50px; 40px; 105px; 105px; 20px; 6ßpx; 40px; 104px; 40px; 70px; 10px; 30px; 104px; 102px'
+
+                    keyTimes = '0; 0.362; 0.368; 0.421; 0.440; 0.477; 0.518; 0.564; 0.593; 0.613; 0.644; 0.693; 0.721; 0.736; 0.772; 0.818; 0.844; 0.894; 0.925; 0.939; 1'
+
+                    repeatCount = "indefinite" />
+ 
+                <animate attributeName="height" 
+                    id = "h" 
+                    dur ="4s"
+                    
+                    values = '10px; 0px; 10px; 30px; 50px; 0px; 10px; 0px; 0px; 0px; 10px; 50px; 40px; 0px; 0px; 0px; 40px; 30px; 10px; 0px; 50px'
+
+                    keyTimes = '0; 0.362; 0.368; 0.421; 0.440; 0.477; 0.518; 0.564; 0.593; 0.613; 0.644; 0.693; 0.721; 0.736; 0.772; 0.818; 0.844; 0.894; 0.925; 0.939; 1'
+
+                    repeatCount = "indefinite" />
+            </feMerge>
+            
+
+            <feMerge x="0" width="100%" y="60px" height="65px" result="merge2">
+                <feMergeNode in = "black" />
+                <feMergeNode in = "comp2" />
+                <feMergeNode in = "off2b" />
+
+                <animate attributeName="y" 
+                    id = "y"
+                    dur ="4s"
+                    values = '103px; 104px; 69px; 53px; 42px; 104px; 78px; 89px; 96px; 100px; 67px; 50px; 96px; 66px; 88px; 42px; 13px; 100px; 100px; 104px;' 
+
+                    keyTimes = '0; 0.055; 0.100; 0.125; 0.159; 0.182; 0.202; 0.236; 0.268; 0.326; 0.357; 0.400; 0.408; 0.461; 0.493; 0.513; 0.548; 0.577; 0.613; 1'
+
+                    repeatCount = "indefinite" />
+ 
+                <animate attributeName="height" 
+                    id = "h"
+                    dur = "4s"
+                    
+                    values = '0px; 0px; 0px; 16px; 16px; 12px; 12px; 0px; 0px; 5px; 10px; 22px; 33px; 11px; 0px; 0px; 10px'
+
+                    keyTimes = '0; 0.055; 0.100; 0.125; 0.159; 0.182; 0.202; 0.236; 0.268; 0.326; 0.357; 0.400; 0.408; 0.461; 0.493; 0.513;  1'
+                     
+                    repeatCount = "indefinite" />
+            </feMerge>
+            
+            <feMerge>
+                <feMergeNode in="SourceGraphic" />  
+
+                <feMergeNode in="merge1" /> 
+            <feMergeNode in="merge2" />
+
+            </feMerge>
+        </filter>
+
+    </defs>
+
+<g>
+    <text x="0" y="100">MY PORTFOLIO</text>
+</g>
+</svg>
+
+<!-- Three columns -->
+<div class="row" style="margin-top: 100px;">
+  <div class="column" onclick="openTab('b1');" style="background:grey;"><img style="height: 250px; weight: 150px;"src="miniresume.png"></div>
+
+  <div class="column" onclick="openTab('b2');" style="background:grey;"><img style="height: 250px; weight: 150px;"src="flagactivity.png">
+  </div>
+
+  <div class="column" onclick="openTab('b3');" style="background:grey;"><img style="height: 250px; weight: 150px;"src="inlineblock.png"></div>
+</div>
+
+<!-- Full-width columns: (hidden by default) -->
+<div id="b1" class="containerTab" style="display:none;background:#676767;width: 65%;margin: 0 auto;">
+  <span onclick="this.parentElement.style.display='none'" class="closebtn">&times;</span>
+  <h2 style="text-align: center; margin-bottom:10px;";>MINI-RESUME ACTIVITY</h2>
+  <p style="text-align: center;">Project : Website <span style="margin-left: 500px;";>Teacher : Mr. Bracil Cimafranca</span><br>
+Languages : HTML, CSS <span style="margin-left: 500px;";>Open Project link: <a href="Mini-Resume.html">Mini-Resume Activity</a></span></p>
+</div>
+
+<div id="b2" class="containerTab" style="display: block;background: blue;width: 65%;margin: 0 auto;">
+  <span onclick="this.parentElement.style.display='none'" class="closebtn">&times;</span>
+  <h2 style="text-align: center; margin-bottom:10px;";>FLAG ACTIVITY</h2>
+  <p style="text-align: center;">Project : Website <span style="margin-left: 500px;";>Teacher : Mr. Bracil Cimafranca</span><br>
+Languages : HTML, CSS <span style="margin-left: 500px;";>Open Project link : <a href="Berbosidad - Flags.html">Flag Activity</a></span></p>
+</div>
+
+<div id="b3" class="containerTab" style="display:none;background:red;width: 65%;margin: 0 auto;">
+  <span onclick="this.parentElement.style.display='none'" class="closebtn">&times;</span>
+  <h2  style="text-align: center; margin-bottom:10px;";>INLINE AND BLOCK ELEMENTS ACTIVITY</h2>
+  <p style="text-align: center;">
+Project : Website <span style="margin-left: 500px;";>Teacher : Mr. Bracil G. Cimafranca</span><br>
+Languages : HTML, CSS<span style="margin-left: 500px;";>Open Project link : <a href="Berbosidad - HTML Colors and Inline & Block Elements.html">Inline and Block Elements Activity</a></span></p>
+</div>
+
+<!-- Three columns -->
+<div class="row" style="margin-top: 100px;">
+  <div class="column" onclick="openTab('b4');" style="background:grey;"><img style="height: 250px; weight: 150px;"src="tables.png"></div>
+  <div class="column" onclick="openTab('b5');" style="background:grey;"><img style="height: 250px; weight: 150px;"src="hello.png">
+  </div>
+  <div class="column" onclick="openTab('b6');" style="background:grey;"><img style="height: 250px; weight: 150px;"src="selectors.png"></div>
+</div>
+
+<!-- Full-width columns: (hidden by default) -->
+<div id="b4" class="containerTab" style="display:none;background:#676767;width: 65%;margin: 0 auto;">
+  <span onclick="this.parentElement.style.display='none'" class="closebtn">&times;</span>
+  <h2 style="text-align: center; margin-bottom:10px;";>TABLES ACTIVITY</h2>
+  <p style="text-align: center;">Project : Website <span style="margin-left: 500px;";>
+Teacher : Mr. Bracil Cimafranca </span><br>
+Languages : HTML, CSS <span style="margin-left: 500px;";>
+Open Project link : <a href="Berbosidad - HTML Tables.html">Tables Activity</a></span></p>
+</div>
+
+<div id="b5" class="containerTab" style="display:none;background:blue;width: 65%;margin: 0 auto;">
+  <span onclick="this.parentElement.style.display='none'" class="closebtn">&times;</span>
+  <h2 style="text-align: center; margin-bottom:10px;";>HELLO WORLD ACTIVITY</h2>
+  <p style="text-align: center;">Project : Website <span style="margin-left: 500px;";>
+Teacher : Mr. Bracil Cimafranca</span><br>
+Languages : HTML<span style="margin-left: 500px;";>
+Open Project link : <a href="hello.html">Hello World Activity</a></span></p>
+</div>
+
+<div id="b6" class="containerTab" style="display:none;background:#676767;width: 65%;margin: 0 auto;">
+  <span onclick="this.parentElement.style.display='none'" class="closebtn">&times;</span>
+  <h2 style="text-align: center; margin-bottom:10px;";>SELECTORS ACTIVITY</h2>
+  <p style="text-align: center;">
+Project : Website <span style="margin-left: 500px;";>
+Teacher : Mr. Bracil G. Cimafranca</span><br>
+Languages : HTML, CSS<span style="margin-left: 500px;";>
+Open Project link : <a href="CSS Selectors Activity.html">Selectors Activity</a></span></p>
+</div>
+
+<script>
+
+function openTab(tabName) {
+  var i, x;
+  x = document.getElementsByClassName("containerTab");
+  for (i = 0; i < x.length; i++) {
+    x[i].style.display = "none";
+  }
+  document.getElementById(tabName).style.display = "block";
+}
+
+
+</script>
+
+</body>
+</html>
